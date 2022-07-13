@@ -66,7 +66,7 @@ def sign_out():
 
 @app.route('/error')
 def error():
-    msg = request.args.get('msg','你智商太低')
+    msg = request.args.get('msg','發生錯誤')
     return render_template('error.html', message = msg)
 
 app.run()
